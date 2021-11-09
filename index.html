@@ -8,7 +8,8 @@
 </head>
 <body>
     <div id="app">
-        <ul>
+        <h1>QUESTE SONO LE EMAIL GENERATE</h1>
+        <ul v-if="emailRandom.length >= 10">
             <li v-for="(email,index) in emailRandom">{{emailRandom[index]}}</li>
         </ul>
 
